@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6e4b91" />
+  <title>A Little Birthday Chapter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <main class="page-shell">
+    <header class="topline">
+      <span class="tiny-leaf" aria-hidden="true">✿</span>
+      <span>THE LITTLE CELEBRATION CLUB</span>
+      <span class="tiny-leaf" aria-hidden="true">✿</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">A note, a little late — but full of love</p>
+      <h1>Another lovely <em>chapter</em> begins.</h1>
+      <p class="intro-copy">A belated birthday wish wrapped in violet blooms, matcha dreams, and all the good things you deserve.</p>
+    </section>
+
+    <section class="book-scene" aria-label="Interactive open-book birthday greeting">
+      <div class="book-shadow"></div>
+      <div class="book">
+        <div class="page page-left">
+          <div class="page-texture"></div>
+          <div class="page-content left-content">
+            <div class="chapter-label"><span>CHAPTER 01</span><span class="line"></span></div>
+            <div class="photo-frame">
+              <div class="photo-tape"></div>
+              <img src="birthday-photo.jpg" alt="Your chosen birthday photo" id="birthdayPhoto"
+                   onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';" />
+              <div class="photo-placeholder" id="photoPlaceholder">
+                <span class="placeholder-icon">♡</span>
+                <strong>Your favorite photo</strong>
+                <small>Add your picture as <code>birthday-photo.jpg</code></small>
+              </div>
+            </div>
+            <p class="photo-caption">a little moment worth keeping</p>
+            <div class="pressed-flower" aria-hidden="true">✿</div>
+            <p class="margin-note">made with a little extra love <span>♡</span></p>
+          </div>
+        </div>
+
+        <div class="book-spine" aria-hidden="true"></div>
+
+        <div class="page page-right">
+          <div class="page-texture"></div>
+          <div class="page-content right-content">
+            <div class="corner-sparkle" aria-hidden="true">✧</div>
+            <p class="eyebrow page-eyebrow">For someone wonderful</p>
+            <h2>Happy<br><em>Belated</em><br>Birthday!</h2>
+            <div class="matcha-stamp"><span>抹茶</span><small>MATCHA MOMENTS</small></div>
+            <p class="message">
+              I may be a little late turning this page, but I hope your birthday brought you plenty of reasons to smile.
+              May this new chapter be gentle with your heart, generous with its surprises, and full of people and moments that make life feel extra beautiful.
+            </p>
+            <p class="wish">Here’s to growing, glowing, and finding joy in the little things — one lovely day at a time.</p>
+            <div class="signature">
+              <span class="signature-line"></span>
+              <span>With love &amp; matcha wishes</span>
+            </div>
+            <div class="botanical botanical-one" aria-hidden="true">❧</div>
+          </div>
+        </div>
+      </div>
+      <div class="floating flower flower-a" aria-hidden="true">✿</div>
+      <div class="floating flower flower-b" aria-hidden="true">✧</div>
+      <div class="floating flower flower-c" aria-hidden="true">❀</div>
+      <div class="floating leaf leaf-a" aria-hidden="true">❧</div>
+      <div class="floating leaf leaf-b" aria-hidden="true">❧</div>
+    </section>
+
+    <div class="controls">
+      <button class="reveal-button" id="surpriseButton" type="button">
+        <span>✦</span> Open a little birthday surprise <span>✦</span>
+      </button>
+      <p class="hint">A tiny click for a little extra sparkle.</p>
+    </div>
+
+    <section class="surprise" id="surprise" aria-live="polite" hidden>
+      <span class="surprise-icon">☘</span>
+      <h3>A little reminder</h3>
+      <p>You deserve beautiful things, peaceful days, big dreams, and the kind of happiness that stays long after the candles are out.</p>
+      <div class="sparkle-row">✧　♡　✧　♡　✧</div>
+    </section>
+
+    <footer>made for your next beautiful chapter <span>·</span> violet skies &amp; matcha days</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
